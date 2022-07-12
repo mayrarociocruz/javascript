@@ -67,3 +67,64 @@ let montoAPagar
         montoAPagar = montoIngresado / numeroDeCoutas[i]
         alert("EN " + numeroDeCoutas[i] + " CUOTAS, PAGAS $ " + montoAPagar ); 
     }
+/*
+let cantidadRepeticiones = prompt("escriba la cantidad de veces que quiere que se repita su mensaje");
+let mensajeParaRepetir = prompt("mensaje que desea repetir");
+
+for( let i =0; i< cantidadRepeticiones; i++){
+    alert (mensajeParaRepetir);
+}
+*/
+
+/*
+let ingresaNumero = prompt("ingresar un numeroo");
+
+    for (let i = 0; i < ingresaNumero ; i++ ){
+        if(i > 4){
+            break;
+        }
+        alert ("lado");
+    }
+
+    */
+
+    /*
+
+for (let i = 1; i <= 10 ; i++){
+    if( i==5){
+        continue;
+    }
+//sentencia continue: en vez de cortar toda la ejecucion solo saltea esa etapa 
+alert(i);
+}
+
+let numeroRandom = prompt("Ingrese un numero");
+
+if((i >= 10) && (i <= 50)){
+    alert ("esta dentro del rango" + numeroRandom);
+}
+else{
+    alert("fuera de rango" + numeroRandom);
+}
+
+*/
+
+//calculador de promedios
+
+let trabajoPractico1 = parseInt(prompt("INGRESA LA NOTA DE TU TP N°1"));
+let trabajoPractico2 = parseInt(prompt("INGRESA LA NOTA DE TU TP N°2"));
+let trabajoPractico3 = parseInt(prompt("INGRESA LA NOTA DE TU TP N°3"));
+
+function calculoDeNota(trabajoPractico1, trabajoPractico2, trabajoPractico3){
+
+    return((trabajoPractico1 + trabajoPractico2 + trabajoPractico3) /3);  
+}
+
+let promedios = calculoDeNota(trabajoPractico1, trabajoPractico2, trabajoPractico3);
+
+if(promedios > 6){
+    alert("Felicidades! estas aprobado, tu promedio es de " + promedios);
+}
+else {
+    alert("Lo siento, estas desaprobado, tu promedio es de " + promedios);
+}
