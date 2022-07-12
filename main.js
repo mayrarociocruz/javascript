@@ -122,8 +122,11 @@ function calculoDeNota(trabajoPractico1, trabajoPractico2, trabajoPractico3){
 
 let promedios = calculoDeNota(trabajoPractico1, trabajoPractico2, trabajoPractico3);
 
-if(promedios > 6){
+if(promedios >= 6){
     alert("Felicidades! estas aprobado, tu promedio es de " + promedios);
+}
+else if((promedios >= 4) && (promedios <6)){
+    alert("Tendras que presentar los TP nuevamente por que tu promedio es de" + promedios)
 }
 else {
     alert("Lo siento, estas desaprobado, tu promedio es de " + promedios);
